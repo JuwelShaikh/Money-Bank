@@ -8,10 +8,11 @@ document.getElementById('btn-logIn').addEventListener('click', function(){
     const pass = passwordField.value;
     
 
-    if(email === 'juwel@gmail.com' && pass == '12345juwel'){
-        alert('Submitted successful.');
+    if(email === 'juwel@gmail.com' && pass === 'juweldx'){
+        window.location.href = 'homePage.html';
+        alert('Welcome to the home page');
     }
     else{
-        alert('Wrong info.')
+        alert('Wrong info.');
     }
 })
