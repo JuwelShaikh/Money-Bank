@@ -20,11 +20,11 @@
         <div class="grid grid-cols-3 gap-3 w-9/12 mx-auto text-white">
             <div class="bg-lime-300 p-8 rounded-lg">
                 <h3 class="text-2xl my-1">Diposit</h3>
-                <h4 class="text-5xl">$00</h4>
+                <h4 class="text-5xl">$<span id="diposit">00</span></h4>
             </div>
             <div class="bg-green-300 p-8 rounded-lg">
                 <h3 class="text-2xl my-1">Withdraw</h3>
-                <h4 class="text-5xl">$00</h4>
+                <h4 class="text-5xl">$<span id="withdraw">00</span></h4>
             </div>
             <div class="bg-teal-300 p-8 rounded-lg">
                 <h3 class="text-2xl my-1">Balance</h3>
@@ -37,14 +37,14 @@
             <div class="bg-indigo-600 p-8 rounded-lg">
                 <h3 class="text-2xl my-1">Diposit</h3>
                 <h5>please enter your ammount</h5>
-                <input type="number"  class="block my-7 w-3/5 rounded px-1 text-black">
-                <button class="bg-violet-300 hover:bg-violet-700 hover:text-white p-1 px-5 rounded-lg text-black">Diposit</button>
+                <input id="input-id-one" type="number"  class="block my-7 w-3/5 rounded px-1 text-black">
+                <button id="btn-diposit" class="bg-violet-300 hover:bg-violet-700 hover:text-white p-1 px-5 rounded-lg text-black">Diposit</button>
             </div>
             <div class="bg-sky-600 p-8 rounded-lg">
                 <h3 class="text-2xl my-1">Withdraw</h3>
                 <h5>please enter your ammount</h5>
-                <input type="number"  class="block my-7 w-3/5 rounded px-1 text-black">
-                <button class="bg-violet-300 hover:bg-violet-700 hover:text-white p-1 px-5 rounded-lg text-black">Withdraw</button>
+                <input id="input-id-two" type="number"  class="block my-7 w-3/5 rounded px-1 text-black">
+                <button id="btn-withdraw" class="bg-violet-300 hover:bg-violet-700 hover:text-white p-1 px-5 rounded-lg text-black">Withdraw</button>
             </div>
         </div>
     </main>
