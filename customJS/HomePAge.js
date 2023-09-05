@@ -12,10 +12,19 @@ document.getElementById('btn-diposit').addEventListener('click',function(){
     const currentDiposit = previousDiposit + newDiposit;
     
     dipositElement.innerText = currentDiposit;
+    
+    // balance
+    const balanceField = document.getElementById('balance-field');
+    const newBalanceFieldString= balanceField.innerText;
+    const newBalance = parseFloat(newBalanceFieldString);
+    const currentBalance = newDiposit + newBalance;
+
+    balanceField.innerText = currentBalance;
 
     inputFieldOne.value = '';
 
 })
+
 
 // input field of Withdraw
 document.getElementById('btn-withdraw').addEventListener('click',function(){
